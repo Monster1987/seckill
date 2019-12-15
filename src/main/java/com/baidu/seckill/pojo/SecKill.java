@@ -1,9 +1,7 @@
 package com.baidu.seckill.pojo;
 
-import org.springframework.stereotype.Component;
-
 import java.util.Date;
-@Component
+
 public class SecKill {
     private Long seckillId;
 

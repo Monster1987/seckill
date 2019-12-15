@@ -1,6 +1,6 @@
 package com.baidu.seckill.controller;
 
-import com.baidu.seckill.dao.SecKillMapper;
+import com.baidu.seckill.mapper.SecKillMapper;
 import com.baidu.seckill.pojo.SecKill;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.web.bind.annotation.RequestMapping;
@@ -18,7 +18,7 @@ public class HelloController {
     private SecKillMapper secKillMapper;
     @RequestMapping("/hello")
     public String hello(){
-        SecKill secKill=secKillMapper.selectByPrimaryKey(2L);
+        SecKill secKill=secKillMapper.selectByPrimaryKey(4L);
         if(secKill==null){
             return "秒杀商品不存在";
         }else {
