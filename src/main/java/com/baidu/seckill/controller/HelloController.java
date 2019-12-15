@@ -1,6 +1,6 @@
 package com.baidu.seckill.controller;
 
-import com.baidu.seckill.mapper.SecKillMapper;
+import com.baidu.seckill.dao.SecKillMapper;
 import com.baidu.seckill.pojo.SecKill;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.web.bind.annotation.RequestMapping;
