@@ -5,7 +5,7 @@ import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
 
 @SpringBootApplication(scanBasePackages = {"com.baidu.seckill"})
-@MapperScan("com.baidu.seckill.dao")
+@MapperScan({"com.baidu.seckill.mapper","com.baidu.seckill.dao"})
 
 public class SeckillApplication {
 

@@ -2,6 +2,9 @@ server:
   port: 8082
 mybatis:
   mapper-locations: classpath:mapping/*.xml
+  type-aliases-package: com.baidu.seckill.pojo
+  configuration:
+    map-underscore-to-camel-case: true
 spring:
   datasource:
     name: datasource
